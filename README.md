@@ -1,5 +1,5 @@
-# READER
+# READ
 
 > Feed reader
 
-Simple Github actions powered feed reader.
+Simple atom, rss, & html feed reader.

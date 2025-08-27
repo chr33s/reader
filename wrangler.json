@@ -1,0 +1,38 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "reader",
+	"compatibility_date": "2025-06-17",
+	"main": "./index.ts",
+	"ai": {
+		"binding": "AI"
+	},
+	"dev": {
+		"ip": "0.0.0.0",
+		"port": 8080
+	},
+	"placement": {
+		"mode": "smart"
+	},
+	"queues": {
+		"consumers": [
+			{
+				"queue": "reader",
+				"retry_delay": 300
+			}
+		],
+		"producers": [
+			{
+				"binding": "QUEUE",
+				"queue": "reader"
+			}
+		]
+	},
+	"triggers": {
+		"crons": [
+			"0 9 * * *"
+		]
+	},
+	"vars": {
+		"WEBHOOK_URL": ""
+	}
+}

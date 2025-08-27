@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"allowArbitraryExtensions": true,
+		"allowImportingTsExtensions": true,
+		"baseUrl": ".",
+		"checkJs": true,
+		"composite": true,
+		"esModuleInterop": true,
+		"lib": ["ES2022"],
+		"module": "preserve",
+		"moduleResolution": "node",
+		"noEmit": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ES2022",
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tsbuildinfo",
+		"verbatimModuleSyntax": true
+	},
+	"exclude": ["node_modules", "dist"],
+	"include": [
+		"index.ts",
+		"reader.d.ts",
+		"worker-configuration.d.ts"
+	]
+}
