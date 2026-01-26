@@ -4,5 +4,6 @@
   "https://shopify.engineering/latest",
   "https://developers.cloudflare.com/changelog/rss/index.xml",
   "https://github.blog/changelog/feed/",
-  "https://web.dev/static/blog/feed.xml"
+  "https://web.dev/static/blog/feed.xml",
+  "https://developer.chrome.com/static/blog/feed.xml"
 ]
