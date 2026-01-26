@@ -4,7 +4,8 @@
 	"compatibility_date": "2025-12-17",
 	"main": "./index.ts",
 	"ai": {
-		"binding": "AI"
+		"binding": "AI",
+		"remote": true
 	},
 	"dev": {
 		"ip": "0.0.0.0",

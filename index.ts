@@ -148,6 +148,7 @@ async function read(env: Env) {
 
 	const recent = items.filter((item) => new Date(item.date) > yesterday);
 	console.log(`processed: ${recent.length} of ${items.length}`);
+	if (recent.length === 0) return;
 
 	await env.QUEUE.sendBatch(recent.map((body) => ({ body, contentType: "json" })));
 }
