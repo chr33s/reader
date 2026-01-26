@@ -31,8 +31,5 @@
 		"crons": [
 			"0 9 * * *"
 		]
-	},
-	"vars": {
-		"WEBHOOK_URL": "https://chat.googleapis.com/v1/spaces/AAQAZzqV0uo/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=fAnqFocFajNHF3vl4Oh-usWol6PXdOjwGI00IR1LmaY"
 	}
 }

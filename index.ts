@@ -4,7 +4,11 @@ import { XMLParser } from 'fast-xml-parser';
 import config from './config.json' with { type: 'json' };
 
 export default {
-	async fetch(_request, env, ctx) {
+	async fetch(request, env, ctx) {
+		const url = new URL(request.url);
+		if (url.searchParams.get('token') !== env.TOKEN) {
+			return new Response('NOK', { status: 403 });
+		}
 		ctx.waitUntil(read(env));
 		return new Response('OK');
 	},
