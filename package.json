@@ -4,12 +4,12 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "@types/turndown": "5.0.5",
-    "typescript": "5.9.2",
-    "wrangler": "4.33.1"
+    "@types/turndown": "5.0.6",
+    "typescript": "5.9.3",
+    "wrangler": "4.60.0"
   },
   "dependencies": {
-    "cheerio": "1.1.2",
-    "fast-xml-parser": "5.2.5"
+    "cheerio": "1.2.0",
+    "fast-xml-parser": "5.3.3"
   }
 }
